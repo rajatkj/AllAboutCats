@@ -10,6 +10,6 @@ import Foundation
 struct RandomCatRequest: NetworkRequest {
     typealias Response = [Cat]
     
-    var networkResourceName: String = "images/search"
+    var networkResourceName: String = "images/search?limit=10"
     
 }

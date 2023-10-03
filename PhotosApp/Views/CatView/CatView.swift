@@ -12,16 +12,37 @@ struct CatView: View {
     
     var body: some View {
         ScrollView {
-            catImage
+            catImages
+        }
+        .navigationTitle("Cats")
+        .overlay {
+            if viewModel.randomCat.isEmpty {
+                ContentUnavailableView.init("No Cats!!", systemImage: "wifi.slash")
+            }
         }
         .task {
             await viewModel.getRandomCat()
         }
     }
     
-    private var catImage: some View {
+    private var catImages: some View {
         ForEach($viewModel.randomCat) {
-            AsyncImage(url: $0.url.wrappedValue)
+            
+            AsyncImage(url: $0.url.wrappedValue) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } placeholder: {
+                        ZStack {
+                            Color.gray
+                            Image(systemName: "photo.fill")
+                        }
+                        .frame(width: 250, height: 250)
+                       
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 24.0))
+                    .padding(.horizontal, 24.0)
+            
         }
        
     }
