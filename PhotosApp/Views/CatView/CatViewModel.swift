@@ -16,9 +16,12 @@ class CatViewModel: ObservableObject {
     
     init(service: RandomCatService) {
         self.catService = service
+        let result = isPalindrome("race a car")
+        print(result)
     }
     
-    func getRandomCat() async{
+    @MainActor
+    func getRandomCat() async {
         do {
             self.randomCat = try await catService.getRandomCats()
         } catch let error {

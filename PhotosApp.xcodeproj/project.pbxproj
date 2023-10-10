@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3652AD41AAF00A2F91D /* PagedRequest.swift */; };
+		040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3672AD41ABC00A2F91D /* PageModel.swift */; };
 		04FFC6722ACC7805004F0475 /* PhotosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFC6712ACC7805004F0475 /* PhotosAppApp.swift */; };
 		04FFC6762ACC7806004F0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFC6752ACC7806004F0475 /* Assets.xcassets */; };
 		04FFC6792ACC7806004F0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFC6782ACC7806004F0475 /* Preview Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040CD3652AD41AAF00A2F91D /* PagedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedRequest.swift; sourceTree = "<group>"; };
+		040CD3672AD41ABC00A2F91D /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		04FFC66E2ACC7805004F0475 /* PhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FFC6712ACC7805004F0475 /* PhotosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppApp.swift; sourceTree = "<group>"; };
 		04FFC6752ACC7806004F0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 			children = (
 				04FFC6B12ACC8495004F0475 /* ModelMapper.swift */,
 				04FFC6B62ACC8DEA004F0475 /* Cat.swift */,
+				040CD3672AD41ABC00A2F91D /* PageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				04FFC6AA2ACC7D62004F0475 /* Environment */,
 				04FFC6A22ACC7AD6004F0475 /* RequestBlueprint */,
 				04FFC6B42ACC88F0004F0475 /* RandomCatRequest.swift */,
+				040CD3652AD41AAF00A2F91D /* PagedRequest.swift */,
 			);
 			path = NetworkRequest;
 			sourceTree = "<group>";
@@ -375,10 +381,12 @@
 				04FFC6A42ACC7AF2004F0475 /* NetworkRequest.swift in Sources */,
 				04FFC6AC2ACC7D7B004F0475 /* NetworkEnvironment.swift in Sources */,
 				04FFC6BF2ACC90A6004F0475 /* CatViewModel.swift in Sources */,
+				040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */,
 				04FFC6A62ACC7B77004F0475 /* HTTPMethod.swift in Sources */,
 				04FFC6BD2ACC909B004F0475 /* CatView.swift in Sources */,
 				04FFC6B72ACC8DEA004F0475 /* Cat.swift in Sources */,
 				04FFC6A92ACC7C93004F0475 /* Error.swift in Sources */,
+				040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */,
 				04FFC6B02ACC8456004F0475 /* Data.swift in Sources */,
 				04FFC6722ACC7805004F0475 /* PhotosAppApp.swift in Sources */,
 			);
