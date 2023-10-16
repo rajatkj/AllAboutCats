@@ -16,7 +16,7 @@ struct CatView: View {
         }
         .navigationTitle("Cats")
         .overlay {
-            if viewModel.randomCat.isEmpty {
+            if viewModel.breeds.isEmpty {
                 ContentUnavailableView.init("No Cats!!", systemImage: "wifi.slash")
             }
         }
@@ -26,15 +26,16 @@ struct CatView: View {
     }
     
     private var catImages: some View {
-        ForEach($viewModel.randomCat) {
+        ForEach($viewModel.breeds) {
             
-            AsyncImage(url: $0.url.wrappedValue) { image in
+            AsyncImage(url: URL(string: "https://cdn2.thecatapi.com/images/\($0.referenceImageId.wrappedValue ?? "").jpg")) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                     } placeholder: {
                         ZStack {
-                            Color.gray
+                            Color.gray.opacity(0.15)
+                                
                             Image(systemName: "photo.fill")
                         }
                         .frame(width: 250, height: 250)

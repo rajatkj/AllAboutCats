@@ -10,6 +10,6 @@ import Foundation
 struct PagedRequest<T: Codable>: NetworkRequest {
     typealias Response = [T]
     
-    var networkResourceName: String = "images/search?limit=10"
+    var networkResourceName: String
     
 }
