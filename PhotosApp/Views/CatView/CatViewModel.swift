@@ -12,6 +12,8 @@ class CatViewModel: ObservableObject {
     
     @Published var breeds: [Breed] = []
     
+    @Published var selectedBreed: Breed?
+    
     static var preview = CatViewModel(service: RandomCatServiceImpl())
     
     init(service: RandomCatService) {

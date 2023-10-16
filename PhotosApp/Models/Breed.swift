@@ -10,39 +10,41 @@ import Foundation
 struct Breed : Codable, Identifiable {
     let weight : Weight?
     let id : String?
-    let name : String?
-    let cfaUrl : String?
-    let vetstreetUrl : String?
-    let vcahospitalsUrl : String?
-    let temperament : String?
-    let origin : String?
-    let countryCodes : String?
-    let countryCode : String?
-    let description : String?
-    let lifeSpan : String?
-    let indoor : Int?
-    let lap : Int?
-    let altNames : String?
-    let adaptability : Int?
-    let affectionLevel : Int?
-    let childFriendly : Int?
-    let dogFriendly : Int?
-    let energyLevel : Int?
-    let grooming : Int?
-    let healthIssues : Int?
-    let intelligence : Int?
-    let shedding_level : Int?
-    let socialNeeds : Int?
-    let strangerFriendly : Int?
-    let vocalisation : Int?
-    let experimental : Int?
-    let hairless : Int?
-    let natural : Int?
-    let rare : Int?
-    let rex : Int?
-    let suppressed_tail : Int?
-    let shortLegs : Int?
-    let wikipediaUrl : String?
-    let hypoallergenic : Int?
+    var name : String?
+    var cfaUrl : String?
+    var vetstreetUrl : String?
+    var vcahospitalsUrl : String?
+    var temperament : String?
+    var origin : String?
+    var countryCodes : String?
+    var countryCode : String?
+    var description : String?
+    var lifeSpan : String?
+    var indoor : Int?
+    var lap : Int?
+    var altNames : String?
+    var adaptability : Int?
+    var affectionLevel : Int?
+    var childFriendly : Int?
+    var dogFriendly : Int?
+    var energyLevel : Int?
+    var grooming : Int?
+    var healthIssues : Int?
+    var intelligence : Int?
+    var shedding_level : Int?
+    var socialNeeds : Int?
+    var strangerFriendly : Int?
+    var vocalisation : Int?
+    var experimental : Int?
+    var hairless : Int?
+    var natural : Int?
+    var rare : Int?
+    var rex : Int?
+    var suppressed_tail : Int?
+    var shortLegs : Int?
+    var wikipediaUrl : String?
+    var hypoallergenic : Int?
     var referenceImageId : String?
+    
+    static let preview: Breed = Breed(weight: Weight(metric: "", imperial: ""), id: "", name: "Britih Short hair", origin: "UK", description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.", referenceImageId: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg")
 }
