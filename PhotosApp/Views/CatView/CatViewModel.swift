@@ -10,7 +10,9 @@ import Foundation
 class CatViewModel: ObservableObject {
     private var catService: RandomCatService
     
-    @Published var randomCat: [Cat] = []
+    @Published var breeds: [Breed] = []
+    
+    @Published var selectedBreed: Breed?
     
     static var preview = CatViewModel(service: RandomCatServiceImpl())
     
@@ -18,9 +20,10 @@ class CatViewModel: ObservableObject {
         self.catService = service
     }
     
-    func getRandomCat() async{
+    @MainActor
+    func getRandomCat() async {
         do {
-            self.randomCat = try await catService.getRandomCats()
+            self.breeds = try await catService.getAllCatBreeds()
         } catch let error {
             print(error)
         }
