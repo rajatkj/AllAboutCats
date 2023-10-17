@@ -12,6 +12,8 @@
 		04F43D482ADEA6B100C91F84 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D472ADEA6B100C91F84 /* RatingView.swift */; };
 		04F43D4B2ADEBD8D00C91F84 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D4A2ADEBD8D00C91F84 /* TabBarView.swift */; };
 		04F43D4D2ADEBDDF00C91F84 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */; };
+		04F43D522ADEC68600C91F84 /* CatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D512ADEC68600C91F84 /* CatMapView.swift */; };
+		04F43D542ADED5B200C91F84 /* CatMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D532ADED5B200C91F84 /* CatMapViewModel.swift */; };
 		04FEA7772ADDACBF0080DC2E /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7762ADDACBF0080DC2E /* BreedDetailView.swift */; };
 		04FEA7792ADDAE210080DC2E /* ImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7782ADDAE210080DC2E /* ImagesRequest.swift */; };
 		04FEA77B2ADDAE860080DC2E /* BreedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA77A2ADDAE860080DC2E /* BreedRequest.swift */; };
@@ -63,6 +65,8 @@
 		04F43D472ADEA6B100C91F84 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		04F43D4A2ADEBD8D00C91F84 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		04F43D512ADEC68600C91F84 /* CatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMapView.swift; sourceTree = "<group>"; };
+		04F43D532ADED5B200C91F84 /* CatMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMapViewModel.swift; sourceTree = "<group>"; };
 		04FEA7762ADDACBF0080DC2E /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 		04FEA7782ADDAE210080DC2E /* ImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRequest.swift; sourceTree = "<group>"; };
 		04FEA77A2ADDAE860080DC2E /* BreedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRequest.swift; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 				04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		04F43D502ADEC67A00C91F84 /* CatMapView */ = {
+			isa = PBXGroup;
+			children = (
+				04F43D512ADEC68600C91F84 /* CatMapView.swift */,
+				04F43D532ADED5B200C91F84 /* CatMapViewModel.swift */,
+			);
+			path = CatMapView;
 			sourceTree = "<group>";
 		};
 		04FEA7752ADDACB00080DC2E /* CatDetailView */ = {
@@ -217,6 +230,7 @@
 		04FFC69B2ACC7811004F0475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04F43D502ADEC67A00C91F84 /* CatMapView */,
 				04F43D492ADEBD7D00C91F84 /* TabBar */,
 				04FEA7752ADDACB00080DC2E /* CatDetailView */,
 				04FFC6BB2ACC908A004F0475 /* CatView */,
@@ -449,9 +463,11 @@
 				04FEA7792ADDAE210080DC2E /* ImagesRequest.swift in Sources */,
 				04FEA77D2ADDAF050080DC2E /* Breed.swift in Sources */,
 				04FFC6AC2ACC7D7B004F0475 /* NetworkEnvironment.swift in Sources */,
+				04F43D542ADED5B200C91F84 /* CatMapViewModel.swift in Sources */,
 				04FFC6BF2ACC90A6004F0475 /* CatViewModel.swift in Sources */,
 				040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */,
 				04FFC6A62ACC7B77004F0475 /* HTTPMethod.swift in Sources */,
+				04F43D522ADEC68600C91F84 /* CatMapView.swift in Sources */,
 				04FFC6BD2ACC909B004F0475 /* CatView.swift in Sources */,
 				04FFC6B72ACC8DEA004F0475 /* Cat.swift in Sources */,
 				04F43D4B2ADEBD8D00C91F84 /* TabBarView.swift in Sources */,
