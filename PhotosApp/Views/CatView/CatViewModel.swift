@@ -18,7 +18,12 @@ class CatViewModel: ObservableObject {
         self.catService = service
     }
     
+<<<<<<< Updated upstream
     func getRandomCat() async{
+=======
+    @MainActor
+    func getAllBreeds() async {
+>>>>>>> Stashed changes
         do {
             self.randomCat = try await catService.getRandomCats()
         } catch let error {

@@ -19,10 +19,26 @@ struct CatView: View {
             if viewModel.randomCat.isEmpty {
                 ContentUnavailableView.init("No Cats!!", systemImage: "wifi.slash")
             }
+<<<<<<< Updated upstream
         }
         .task {
             await viewModel.getRandomCat()
         }
+=======
+            .navigationTitle("Cats")
+            .overlay {
+                if viewModel.breeds.isEmpty {
+                    ContentUnavailableView.init("No Cats!!", systemImage: "wifi.slash")
+                }
+                
+            }
+            .task {
+                if viewModel.breeds.isEmpty {
+                    await viewModel.getAllBreeds()
+                }
+            }
+        
+>>>>>>> Stashed changes
     }
     
     private var catImages: some View {
