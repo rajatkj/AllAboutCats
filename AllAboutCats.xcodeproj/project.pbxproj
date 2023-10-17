@@ -384,7 +384,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04FFC6692ACC7805004F0475 /* Build configuration list for PBXProject "PhotosApp" */;
+			buildConfigurationList = 04FFC6692ACC7805004F0475 /* Build configuration list for PBXProject "AllAboutCats" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -755,7 +755,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04FFC6692ACC7805004F0475 /* Build configuration list for PBXProject "PhotosApp" */ = {
+		04FFC6692ACC7805004F0475 /* Build configuration list for PBXProject "AllAboutCats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04FFC6902ACC7806004F0475 /* Debug */,
