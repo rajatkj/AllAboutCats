@@ -9,16 +9,12 @@ import SwiftUI
 
 @main
 struct PhotosAppApp: App {
-    let initialView: CatView
+    let initialView: TabBarView
     
     init() {
         URLCache.shared.memoryCapacity = 10_000_000
         URLCache.shared.diskCapacity = 1_000_000_000
-        
-        let service = RandomCatServiceImpl(networkManager: DefaultNetworkManager())
-        let viewModel = CatViewModel(service: service)
-        let view = CatView(viewModel: viewModel)
-        initialView = view
+        initialView = TabBarView()
     }
     var body: some Scene {
         WindowGroup {

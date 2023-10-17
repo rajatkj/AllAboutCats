@@ -27,7 +27,12 @@ struct CatView: View {
                 await viewModel.getAllBreeds()
             }
         }
-        .searchable(text: $viewModel.searchText, isPresented: $searchIsActive, prompt: "Meow?")
+        .searchable(text: $viewModel.searchText, isPresented: $searchIsActive, prompt: viewModel.currentPlaceholder)
+        .onReceive(viewModel.timer, perform: { _ in
+            withAnimation {
+                viewModel.changePlaceholder()
+            }
+        })
     }
     
     private var catList: some View {

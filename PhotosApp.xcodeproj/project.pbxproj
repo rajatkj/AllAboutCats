@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3652AD41AAF00A2F91D /* PagedRequest.swift */; };
 		040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3672AD41ABC00A2F91D /* PageModel.swift */; };
 		04F43D482ADEA6B100C91F84 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D472ADEA6B100C91F84 /* RatingView.swift */; };
+		04F43D4B2ADEBD8D00C91F84 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D4A2ADEBD8D00C91F84 /* TabBarView.swift */; };
+		04F43D4D2ADEBDDF00C91F84 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */; };
 		04FEA7772ADDACBF0080DC2E /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7762ADDACBF0080DC2E /* BreedDetailView.swift */; };
 		04FEA7792ADDAE210080DC2E /* ImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7782ADDAE210080DC2E /* ImagesRequest.swift */; };
 		04FEA77B2ADDAE860080DC2E /* BreedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA77A2ADDAE860080DC2E /* BreedRequest.swift */; };
@@ -60,6 +61,8 @@
 		040CD3652AD41AAF00A2F91D /* PagedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedRequest.swift; sourceTree = "<group>"; };
 		040CD3672AD41ABC00A2F91D /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		04F43D472ADEA6B100C91F84 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		04F43D4A2ADEBD8D00C91F84 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		04FEA7762ADDACBF0080DC2E /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 		04FEA7782ADDAE210080DC2E /* ImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRequest.swift; sourceTree = "<group>"; };
 		04FEA77A2ADDAE860080DC2E /* BreedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRequest.swift; sourceTree = "<group>"; };
@@ -123,6 +126,15 @@
 				04F43D472ADEA6B100C91F84 /* RatingView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		04F43D492ADEBD7D00C91F84 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				04F43D4A2ADEBD8D00C91F84 /* TabBarView.swift */,
+				04F43D4C2ADEBDDF00C91F84 /* TabViewModel.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		04FEA7752ADDACB00080DC2E /* CatDetailView */ = {
@@ -205,6 +217,7 @@
 		04FFC69B2ACC7811004F0475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04F43D492ADEBD7D00C91F84 /* TabBar */,
 				04FEA7752ADDACB00080DC2E /* CatDetailView */,
 				04FFC6BB2ACC908A004F0475 /* CatView */,
 			);
@@ -424,6 +437,7 @@
 			files = (
 				04FFC6B22ACC8495004F0475 /* ModelMapper.swift in Sources */,
 				04FFC6AE2ACC806F004F0475 /* EncodingDecodingStrategy.swift in Sources */,
+				04F43D4D2ADEBDDF00C91F84 /* TabViewModel.swift in Sources */,
 				04FFC6BA2ACC8F68004F0475 /* RandomCatService.swift in Sources */,
 				04F43D482ADEA6B100C91F84 /* RatingView.swift in Sources */,
 				04FFC6B52ACC88F0004F0475 /* RandomCatRequest.swift in Sources */,
@@ -440,6 +454,7 @@
 				04FFC6A62ACC7B77004F0475 /* HTTPMethod.swift in Sources */,
 				04FFC6BD2ACC909B004F0475 /* CatView.swift in Sources */,
 				04FFC6B72ACC8DEA004F0475 /* Cat.swift in Sources */,
+				04F43D4B2ADEBD8D00C91F84 /* TabBarView.swift in Sources */,
 				04FFC6A92ACC7C93004F0475 /* Error.swift in Sources */,
 				04FEA7842ADDB4EB0080DC2E /* CardView.swift in Sources */,
 				040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */,

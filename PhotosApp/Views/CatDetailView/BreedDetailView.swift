@@ -38,10 +38,8 @@ struct BreedDetailView: View {
                     .foregroundStyle(.white)
                     
                 }
-
             }
         }
-        
     }
     
     private var image: some View {
