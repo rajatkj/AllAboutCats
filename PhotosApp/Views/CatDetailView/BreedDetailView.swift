@@ -20,7 +20,7 @@ struct BreedDetailView: View {
                 ratingListView
             }
             
-            Spacer()
+            Spacer(minLength: 100.0)
         }
         .ignoresSafeArea()
         .navigationBarTitleDisplayMode(.inline)

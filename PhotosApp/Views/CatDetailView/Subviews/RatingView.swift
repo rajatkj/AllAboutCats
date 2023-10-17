@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RatingView: View {
     var title: String = "Label"
-    var value: Int? = 3
+    @State var value: Int? = 3
     var total: Int = 5
     
     var body: some View {
@@ -19,6 +19,14 @@ struct RatingView: View {
             .frame(height: 56)
             .padding(.horizontal)
             .padding(.vertical, 8.0)
+            .onAppear {
+                let tempValue = value
+                value = 0
+                
+                withAnimation(.spring(.bouncy)) {
+                    value = tempValue
+                }
+            }
         
     }
 }
