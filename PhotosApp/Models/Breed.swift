@@ -64,5 +64,5 @@ struct Breed : Codable, Identifiable {
         return Dictionary(uniqueKeysWithValues: zip(keys, values))
     }
 
-    static let preview: Breed = Breed(weight: Weight(metric: "", imperial: ""), id: "", name: "Britih Short hair", origin: "UK", description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.", referenceImageId: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg")
+    static let preview: Breed = Breed(weight: Weight(metric: "", imperial: ""), id: "", name: "Britih Short hair", origin: "UK", description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.", wikipediaUrl: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg", referenceImageId: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg")
 }

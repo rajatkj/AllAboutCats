@@ -9,34 +9,29 @@ import SwiftUI
 
 struct CatView: View {
     @ObservedObject var viewModel: CatViewModel
-    
-    @State private var showDetail = false
-    
+    @State private var searchIsActive = false
+
     var body: some View {
         
         ScrollView {
-            catImages
-        }
-        .task {
-            await viewModel.getRandomCat()
+            catList
         }
         .navigationTitle("Cats")
         .overlay {
             if viewModel.breeds.isEmpty {
                 ContentUnavailableView.init("No Cats!!", systemImage: "wifi.slash")
             }
-            
         }
         .task {
             if viewModel.breeds.isEmpty {
                 await viewModel.getAllBreeds()
             }
         }
-        
+        .searchable(text: $viewModel.searchText, isPresented: $searchIsActive, prompt: "Meow?")
     }
     
-    private var catImages: some View {
-        ForEach(viewModel.breeds) { breed in
+    private var catList: some View {
+        ForEach(searchIsActive ? viewModel.searchResults : viewModel.breeds) { breed in
             NavigationLink {
                 BreedDetailView(breed: breed)
             } label: {

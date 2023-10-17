@@ -14,9 +14,12 @@ struct BreedDetailView: View {
     
     var body: some View {
         ScrollView {
-            image
-            detailsView
-            ratingListView
+            VStack(alignment: .leading) {
+                image
+                detailsView
+                ratingListView
+            }
+            
             Spacer()
         }
         .ignoresSafeArea()
@@ -59,10 +62,15 @@ struct BreedDetailView: View {
     }
     
     private var detailsView: some View {
-        VStack(alignment: .leading) {
-            Text(breed?.origin ?? "")
-                .font(.headline)
-                .foregroundColor(.secondary)
+        VStack(alignment: .leading, spacing: 8.0) {
+            HStack {
+                Text(breed?.origin ?? "")
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+                Spacer()
+                linkView
+            }
+            
             Text(breed?.name ?? "")
                 .font(.title)
                 .fontWeight(.black)
@@ -71,9 +79,11 @@ struct BreedDetailView: View {
 
             Text(breed?.description ?? "")
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundColor(.primary)
+            temperamentView
         }
         .padding(.horizontal)
+
     }
     
     @ViewBuilder
@@ -84,6 +94,32 @@ struct BreedDetailView: View {
                     RatingView(title: key, value: value, total: 5)
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    private var linkView: some View {
+        if let wikipediaUrl = breed?.wikipediaUrl, let url = URL(string: wikipediaUrl) {
+            Link(destination: url, label: {
+                HStack(spacing: 0) {
+                    Image(systemName: "link")
+                        .font(.caption)
+                    Text("Wikipedia")
+                        .font(.callout)
+                }
+            })
+        }
+    }
+    
+    private var temperamentView: some View {
+        HStack() {
+            Text("Temperament ")
+                .font(.caption)
+                .fontWeight(.bold)
+            +
+            Text(breed?.temperament ?? "Active, Playful")
+                .font(.caption2)
+
         }
     }
 }

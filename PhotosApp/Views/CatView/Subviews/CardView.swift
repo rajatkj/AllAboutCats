@@ -69,6 +69,7 @@ struct CardView: View {
                 Text(breed?.temperament ?? "")
                     .font(.caption)
                     .foregroundColor(.white)
+                    .lineLimit(1)
             }
             .layoutPriority(100)
             .padding()

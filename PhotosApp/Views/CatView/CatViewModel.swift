@@ -12,7 +12,13 @@ class CatViewModel: ObservableObject {
     
     @Published var breeds: [Breed] = []
     
-    @Published var selectedBreed: Breed?
+    @Published var searchText: String = "" {
+        didSet{
+            self.searchResults = breeds.filter({ $0.name?.lowercased().hasPrefix(searchText.lowercased()) ?? false })
+        }
+    }
+    
+    @Published var searchResults: [Breed] = []
     
     static var preview = CatViewModel(service: RandomCatServiceImpl())
     
