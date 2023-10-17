@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
-=======
+
 		040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3652AD41AAF00A2F91D /* PagedRequest.swift */; };
 		040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CD3672AD41ABC00A2F91D /* PageModel.swift */; };
 		04F43D482ADEA6B100C91F84 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F43D472ADEA6B100C91F84 /* RatingView.swift */; };
@@ -19,7 +18,6 @@
 		04FEA77F2ADDAF1D0080DC2E /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA77E2ADDAF1D0080DC2E /* WeightModel.swift */; };
 		04FEA7812ADDB1100080DC2E /* CatImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7802ADDB1100080DC2E /* CatImageRequest.swift */; };
 		04FEA7842ADDB4EB0080DC2E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEA7832ADDB4EB0080DC2E /* CardView.swift */; };
->>>>>>> Stashed changes
 		04FFC6722ACC7805004F0475 /* PhotosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFC6712ACC7805004F0475 /* PhotosAppApp.swift */; };
 		04FFC6762ACC7806004F0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFC6752ACC7806004F0475 /* Assets.xcassets */; };
 		04FFC6792ACC7806004F0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFC6782ACC7806004F0475 /* Preview Assets.xcassets */; };
@@ -59,8 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< Updated upstream
-=======
 		040CD3652AD41AAF00A2F91D /* PagedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedRequest.swift; sourceTree = "<group>"; };
 		040CD3672AD41ABC00A2F91D /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		04F43D472ADEA6B100C91F84 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -71,7 +67,6 @@
 		04FEA77E2ADDAF1D0080DC2E /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		04FEA7802ADDB1100080DC2E /* CatImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRequest.swift; sourceTree = "<group>"; };
 		04FEA7832ADDB4EB0080DC2E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		04FFC66E2ACC7805004F0475 /* PhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FFC6712ACC7805004F0475 /* PhotosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppApp.swift; sourceTree = "<group>"; };
 		04FFC6752ACC7806004F0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,8 +117,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< Updated upstream
-=======
 		04F43D462ADEA69E00C91F84 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +142,6 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		04FFC6652ACC7805004F0475 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +205,7 @@
 		04FFC69B2ACC7811004F0475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04FEA7752ADDACB00080DC2E /* CatDetailView */,
 				04FFC6BB2ACC908A004F0475 /* CatView */,
 			);
 			path = Views;
@@ -233,6 +226,9 @@
 			children = (
 				04FFC6B12ACC8495004F0475 /* ModelMapper.swift */,
 				04FFC6B62ACC8DEA004F0475 /* Cat.swift */,
+				040CD3672AD41ABC00A2F91D /* PageModel.swift */,
+				04FEA77C2ADDAF050080DC2E /* Breed.swift */,
+				04FEA77E2ADDAF1D0080DC2E /* WeightModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +247,10 @@
 				04FFC6AA2ACC7D62004F0475 /* Environment */,
 				04FFC6A22ACC7AD6004F0475 /* RequestBlueprint */,
 				04FFC6B42ACC88F0004F0475 /* RandomCatRequest.swift */,
+				040CD3652AD41AAF00A2F91D /* PagedRequest.swift */,
+				04FEA7782ADDAE210080DC2E /* ImagesRequest.swift */,
+				04FEA77A2ADDAE860080DC2E /* BreedRequest.swift */,
+				04FEA7802ADDB1100080DC2E /* CatImageRequest.swift */,
 			);
 			path = NetworkRequest;
 			sourceTree = "<group>";
@@ -285,6 +285,7 @@
 		04FFC6BB2ACC908A004F0475 /* CatView */ = {
 			isa = PBXGroup;
 			children = (
+				04FEA7822ADDB4DB0080DC2E /* Subviews */,
 				04FFC6BC2ACC909B004F0475 /* CatView.swift */,
 				04FFC6BE2ACC90A6004F0475 /* CatViewModel.swift */,
 			);
@@ -428,14 +429,23 @@
 				04FFC6B52ACC88F0004F0475 /* RandomCatRequest.swift in Sources */,
 				04FFC6A02ACC7A55004F0475 /* NetworkManager.swift in Sources */,
 				04FFC6A42ACC7AF2004F0475 /* NetworkRequest.swift in Sources */,
+				04FEA7772ADDACBF0080DC2E /* BreedDetailView.swift in Sources */,
+				04FEA77F2ADDAF1D0080DC2E /* WeightModel.swift in Sources */,
+				04FEA7812ADDB1100080DC2E /* CatImageRequest.swift in Sources */,
+				04FEA7792ADDAE210080DC2E /* ImagesRequest.swift in Sources */,
+				04FEA77D2ADDAF050080DC2E /* Breed.swift in Sources */,
 				04FFC6AC2ACC7D7B004F0475 /* NetworkEnvironment.swift in Sources */,
 				04FFC6BF2ACC90A6004F0475 /* CatViewModel.swift in Sources */,
+				040CD3682AD41ABC00A2F91D /* PageModel.swift in Sources */,
 				04FFC6A62ACC7B77004F0475 /* HTTPMethod.swift in Sources */,
 				04FFC6BD2ACC909B004F0475 /* CatView.swift in Sources */,
 				04FFC6B72ACC8DEA004F0475 /* Cat.swift in Sources */,
 				04FFC6A92ACC7C93004F0475 /* Error.swift in Sources */,
+				04FEA7842ADDB4EB0080DC2E /* CardView.swift in Sources */,
+				040CD3662AD41AAF00A2F91D /* PagedRequest.swift in Sources */,
 				04FFC6B02ACC8456004F0475 /* Data.swift in Sources */,
 				04FFC6722ACC7805004F0475 /* PhotosAppApp.swift in Sources */,
+				04FEA77B2ADDAE860080DC2E /* BreedRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
